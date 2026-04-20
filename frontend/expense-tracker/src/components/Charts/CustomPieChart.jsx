@@ -30,7 +30,7 @@ const CustomPieChart = ({
                 labelLine = {false}
             >
                 {data.map((entry, index) => (
-                    <Cell key = {`cell-${index}`} fill = {color[index % color.lenght]} />
+                    <Cell key = {`cell-${index}`} fill = {color[index % color.length]} />
                 ))}
             </Pie>
             <Tooltip content = {CustomTooltip} />
@@ -55,7 +55,7 @@ const CustomPieChart = ({
                         textAnchor = "middle"
                         fill = "#333"
                         fontSize = "24px"
-                        fontWeight = "semi-bold"
+                        fontWeight = {600}
                     >
                         { totalAmount }
                     </text>
